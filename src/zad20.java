@@ -7,7 +7,7 @@ public class zad20 {
         Scanner klawiatura = new Scanner(System.in);
 
 
-        System.out.println("Podaj dodatnia liczbe. : ");
+        System.out.println("Podaj liczbe. : ");
         int liczba = klawiatura.nextInt();
         for (int   i=1; i<=liczba; i++) {
         for (int x=1;x<liczba;x++){

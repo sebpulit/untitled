@@ -1,28 +1,18 @@
 import java.util.Scanner;
 
 public class zad23 {
+
     public static void main(String[] args) {
 
+        Scanner klawiatura = new Scanner(System.in);
+        System.out.println("Jak sie nazywasz?: ");
+        String imie = klawiatura.nextLine();
+        Scanner klawiatura2 = new Scanner(System.in);
+        System.out.println("Opisz siebie: ");
+        String opis = klawiatura2.nextLine();
 
-        Scanner scanner = new Scanner(System.in);
-
-
-        System.out.println("Podaj imie i nazwisko.");
-
-        do {
-            System.out.print("Podaj swoją propozycję: ");
-            zgadnietaLiczba = scanner.nextInt();
-            proby++;
-
-            if (zgadnietaLiczba < liczba) {
-                System.out.println("Za mała liczba, spróbuj ponownie.");
-            } else if (zgadnietaLiczba > liczba) {
-                System.out.println("Za duża liczba, spróbuj ponownie.");
-            } else {
-                System.out.println("Brawo! Odgadłeś liczbę " + liczba + " w " + proby + " próbach.");
-            }
-        } while (zgadnietaLiczba != liczba);
-
+        System.out.println(
+                "<html>\n<head>\n</head>\n<body>\n<center>\n<h1>" + imie + "</h1>\n</center>\n<hr/>\n" + opis + "\n<hr/>\n</body>\n</html>");
 
     }
 }
